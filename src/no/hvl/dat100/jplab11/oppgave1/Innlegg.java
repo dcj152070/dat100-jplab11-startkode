@@ -4,8 +4,6 @@ import no.hvl.dat100.jplab11.common.TODO;
 
 public abstract class Innlegg {
 
-	// TODO - deklarering av objektvariable
-
 // a)
 	private int id;
 	private String bruker;
@@ -18,7 +16,6 @@ public abstract class Innlegg {
 
 	public Innlegg(int id, String bruker, String dato) {
 
-		// TODO
 // b)
 		this.id = id;
 		this.bruker = bruker;
@@ -28,8 +25,6 @@ public abstract class Innlegg {
 	}
 
 	public Innlegg(int id, String bruker, String dato, int likes) {
-
-		// TODO - START
 
 		this.id = id;
 		this.bruker = bruker;
@@ -69,7 +64,7 @@ public abstract class Innlegg {
 	}
 
 	public void doLike() {
-		likes++;
+		this.likes++;
 	}
 
 	public boolean erLik(Innlegg innlegg) {
@@ -81,6 +76,7 @@ public abstract class Innlegg {
 			return false;
 		}
 	}
+
 // e)
 	@Override
 	public String toString() {
